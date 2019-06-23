@@ -5,7 +5,7 @@ HERE="$(dirname "$(readlink -f "${0}")")"
 function downloadGIMP () {
   echo "\nDownloading GIMP...\n"
 
-  VERSION="2.10.11-20190530"
+  export VERSION="2.10.11-20190530"
   RELEASE_PATH="aferrero2707/gimp-appimage/releases/download/continuous"
 
   wget -c https://github.com/$RELEASE_PATH/GIMP_AppImage-git-$VERSION-x86_64.AppImage -O GIMP.AppImage
