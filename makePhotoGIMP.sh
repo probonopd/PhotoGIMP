@@ -74,7 +74,7 @@ function patchGIMP() {
 function packAppImage() {
   echo -e "\nPackaging AppImage...\n"
   mv squashfs-root PhotoGIMP.AppDir
-  ./appimagetool-x86_64.AppImage PhotoGIMP.AppDir
+  ARCH=x86_64 ./appimagetool-x86_64.AppImage PhotoGIMP.AppDir
 }
 
 
