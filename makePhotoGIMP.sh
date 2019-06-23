@@ -82,8 +82,8 @@ unzip PATCH.zip
 downloadGIMP 
 downloadAppImageTool
 replaceFiles
+sudo chmod -R a+rx squashfs-root
 cd squashfs-root
-chmod -Rv 755 .
 patchIcon
 patchStartup
 patchWindowIcon
